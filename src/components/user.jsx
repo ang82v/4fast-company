@@ -1,9 +1,9 @@
 import React from "react";
+import PropsType from "prop-types";
 import Qualitie from "./qualitie";
 import BookMark from "./bookmark";
 
 const User = ({ user, onDelete, onBookMark }) => {
-  //console.log(...rest);
   return (
     <tr key={user._id}>
       <td>{user.name}</td>
@@ -23,6 +23,12 @@ const User = ({ user, onDelete, onBookMark }) => {
       </td>
     </tr>
   );
+};
+
+User.propTypes = {
+  user: PropsType.object.isRequired,
+  onDelete: PropsType.func.isRequired,
+  onBookMark: PropsType.func.isRequired
 };
 
 export default User;

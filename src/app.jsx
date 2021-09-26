@@ -5,7 +5,6 @@ import api from "./api/index";
 
 function App() {
   const [users, setUsers] = useState(api.users.fetchAll());
-  //console.log(users); // получили всех пользователей
   const handleDelete = (idProduct) => {
     console.log("удаляем ", idProduct);
     const newUsers = users.filter((item) => item._id !== idProduct);

@@ -1,4 +1,5 @@
 import React from "react";
+import PropsType from "prop-types";
 
 const Qualitie = ({ qualities }) => {
   // console.log(qualities);
@@ -12,6 +13,10 @@ const Qualitie = ({ qualities }) => {
       ))}
     </>
   );
+};
+
+Qualitie.propTypes = {
+  qualities: PropsType.array
 };
 
 export default Qualitie;

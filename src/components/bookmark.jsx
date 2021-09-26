@@ -1,7 +1,6 @@
 import React from "react";
 
 const BookMark = ({ ...rest }) => {
-  console.log(rest);
   return (
     <div style={{ textAlign: "center" }}>
       <svg
